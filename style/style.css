@@ -137,7 +137,7 @@ border-radius: 30px;
   /*animation: 0.3s click cubic-bezier(.42,0,.58,1);*/
 }
 
-hr {
+.hr {
   border: none;
   border-top: 2px solid #3a4f7a;
   width: screen;
@@ -213,7 +213,6 @@ width: screen;
 }
 
 .profile-box {
-  width: 1200px;
   box-shadow: 0px 4px 27px 13px rgba(0, 0, 0, 0.05);
 
 }
@@ -256,6 +255,7 @@ width: screen;
  width: 9em;
 
 }
+
 
 @keyframes fly-1 {
   from {

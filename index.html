@@ -6,26 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/dist/output.css" rel="stylesheet" />
   <link rel="stylesheet" href="/style/style.css">
+  <link href="/style/home-style.css" rel="stylesheet">
+
   <!-- navbar -->
   <header>
 
-    <nav class="navbar">
-      <div>
-        <div class="navbar">
-          <div class="flex items-center justify-between biru">
-            <div class="ml-14 my-5 flex  gap-3">
-              <img src="/assets/images/Logo Universitas negeri Yogyakarta (UNY)-hitam 1.png" width="12%">
-              <a class="font-bold text-white mt-2" href="#"> Staff Site UNY </a>
+    <nav id="nav">
+      <div id="nav-scroll" class="flex justify-center nav-space mt-10">
+        <div class="pl-5 pb-3 pt-3 flex items-center  shadow-xl biru w-screen ml-24 mr-24 rounded-lg">
+          <a href="#staff-site">
+            <img src="assets/images/logo-uny.png" alt="logo-uny" width="70px">
+          </a>
+          <a class="ml-5 nav-text text-white font-semibold nav-active" href="#staff-site">Beranda</a>
+          <a class="ml-5 nav-text text-white font-semibold" href="#data">Data</a>
+          <a class="ml-5 nav-text text-white font-semibold" href="#about">Tentang</a>
+
+          <div class="ml-auto pr-5">
+            <!-- <form>
+                                <input class="rounded-md h-8 pl-5" placeholder="Cari dosen...">
+                            </form> -->
+            <div class="">
+              <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" />
+
+
+              <div class="sec-center">
+                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                <label class="for-dropdown" for="dropdown">Pilih Bahasa
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                  </svg>
+
+                  <i class="uil uil-arrow-down"></i></label>
+                <div class="section-dropdown">
+                  <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub" />
+                  <a class="a" href="#">Bahasa Indonesia<i class="uil uil-arrow-right"></i></a>
+                  <a class="a" href="#">Bahasa Inggris <i class="uil uil-arrow-right"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="mr-20 flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
-                <path fill-rule="evenodd"
-                  d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                  clip-rule="evenodd" />
-              </svg>
-              <a class="font-bold text-white" href="#"> Login </a>
-            </div>
+
           </div>
+
         </div>
       </div>
     </nav>
@@ -37,9 +60,9 @@
   <!-- navbar -->
 
   <!-- rekomendasi Dosen -->
-  <div class="flex">
+  <div class="flex ml-24 mr-24">
     <div class="flex">
-      <div class="mt-10 ml-16 flex justify-evenly gap-10">
+      <div class="mt-10  flex justify-evenly gap-10">
         <div class=" shadow-2xl rounded-full">
           <button
             class="rekomendasi h-10 w-60 flex items-center shadow justify-center gap-2 rounded-full hijau text-white font-bold">
@@ -61,7 +84,7 @@
 
 
     <!-- search -->
-    <div class=" mt-10 h-10 w-full block ml-10 mr-16 relative">
+    <div class=" mt-10 h-10 w-full block ml-10  relative">
       <div class="relative w-full flex">
         <input type="text" class="search shadow-2xl p-3 h-10 w-full font-normal text-white  rounded-full biru"
           placeholder="Cari" />
@@ -171,7 +194,7 @@
         </div>
       </div>
       <div class="mt-10">
-        <hr>
+        <hr class="hr">
       </div>
       <!-- filter -->
 
@@ -274,7 +297,7 @@
 
     <div class="mt-10 flex">
       <div class="">
-        <div class=" ml-16 w-2/3 gap-y-2  left-0">
+        <div class=" ml-24 w-2/3 gap-y-2  left-0">
 
           <div>
             <a href="profile.html">
